@@ -1,0 +1,30 @@
+.photo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 600px;
+    width: 400px;
+    overflow: hidden;
+    
+}
+.pic{
+    height: 100%;
+    width: 100%;
+}
+.hdg h1{
+    color:#1b3b5a;
+    text-align: center;
+}
+.pic button{
+    width: 97%;
+    padding: 10px;
+    font-weight: bold;
+    color:green;
+    font-size: medium;
+    background-color:rgb(240, 229, 214);
+    border: none;
+    border-radius: 10px;
+
+}
+.pic img{
+    border-radius: 10px;
+}
