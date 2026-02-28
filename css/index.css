@@ -1,3 +1,13 @@
+html{
+    overflow-x:hidden;
+    
+}
+body{
+    overflow-x:hidden;
+    
+}
+
+
 header{
     display: flex;
     justify-content: space-between;
@@ -7,6 +17,7 @@ header{
     align-items: center;
     border-radius: 10px;
     margin: 0;
+    overflow: hidden;
 }
 .logo{
     margin-left: 10px;
@@ -59,3 +70,93 @@ header{
     font-size: 25px;
 }
   
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px){
+
+    /* Header */
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar{
+        margin-top: 10px;
+    }
+
+    .navbar a{
+        display: block;
+        padding: 5px;
+    }
+
+    /* Front Section */
+    .ftext h1{
+        font-size: 28px;
+    }
+
+    .ftext p{
+        font-size: 16px;
+    }
+
+    /* About Section */
+    .about{
+        height: auto;
+    }
+
+    .content{
+        position: relative;
+        flex-direction: column;
+    }
+
+    .texte p{
+        font-size: 16px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* Tourist Section */
+    .tourist{
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    /* Food Section */
+    .dish{
+        grid-template-columns: 1fr;
+    }
+
+    .eat{
+        height: 300px;
+    }
+
+    /* Gallery */
+    .pic{
+        margin-left: 0;
+        margin-right: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    /* Contact Section */
+    .info{
+        height: auto;
+    }
+
+    form{
+        position: relative;
+        padding: 20px;
+    }
+
+    .boxx input,
+    .boxx textarea{
+        width: 100%;
+    }
+
+    .boxx button{
+        width: 100%;
+    }
+
+}

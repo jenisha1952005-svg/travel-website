@@ -1,14 +1,18 @@
 .photo{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display:grid;
+    grid-template-columns: repeat(2);
     height: 600px;
-    width: 400px;
-    overflow: hidden;
-    
+    width: 100%;
+    margin-left:20px;
+
 }
+
+
 .pic{
     height: 100%;
     width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .hdg h1{
     color:#1b3b5a;
