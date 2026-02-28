@@ -65,29 +65,44 @@ header{
 }
 .ftext h1{
     font-size: 60px;
+     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+     color:darkblue;
 } 
 .ftext p{
     font-size: 25px;
 }
+footer{
+    background-color: black;
+    color:white;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
   
-/* ================= MOBILE RESPONSIVE ================= */
+
+/* ================= MOBILE RESPONSIVE FIX ================= */
 
 @media (max-width: 768px){
 
     /* Header */
     header{
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        padding: 10px;
     }
-
-    .navbar{
-        margin-top: 10px;
+ .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
     .navbar a{
-        display: block;
-        padding: 5px;
+        padding: 5px 10px;
+        margin: 0;
     }
+
 
     /* Front Section */
     .ftext h1{
@@ -98,65 +113,5 @@ header{
         font-size: 16px;
     }
 
-    /* About Section */
-    .about{
-        height: auto;
-    }
-
-    .content{
-        position: relative;
-        flex-direction: column;
-    }
-
-    .texte p{
-        font-size: 16px;
-    }
-
-    .grid{
-        grid-template-columns: 1fr;
-    }
-
-    /* Tourist Section */
-    .tourist{
-        grid-template-columns: 1fr;
-        padding: 15px;
-    }
-
-    /* Food Section */
-    .dish{
-        grid-template-columns: 1fr;
-    }
-
-    .eat{
-        height: 300px;
-    }
-
-    /* Gallery */
-    .pic{
-        margin-left: 0;
-        margin-right: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-
-    /* Contact Section */
-    .info{
-        height: auto;
-    }
-
-    form{
-        position: relative;
-        padding: 20px;
-    }
-
-    .boxx input,
-    .boxx textarea{
-        width: 100%;
-    }
-
-    .boxx button{
-        width: 100%;
-    }
-
+   
 }

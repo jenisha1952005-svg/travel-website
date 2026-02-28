@@ -43,3 +43,14 @@ button:hover{
     text-align: center;
     color:#1b3b5a;
 }
+@media (max-width: 768px){
+      .tourist{
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .spots{
+        height: 220px;
+    }
+
+    }
